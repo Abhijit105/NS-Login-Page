@@ -1,0 +1,197 @@
+/*
+COLORS
+#ced4da
+#228be6
+#fff
+#999
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border-bottom: 2px solid black;
+}
+
+nav {
+  padding: 16px;
+  grid-column: 1 / span 2;
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 8px;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav img {
+  margin-right: 16px;
+}
+
+nav > ul > li:last-child {
+  margin-left: auto;
+}
+
+nav button {
+  background-color: #228be6;
+  padding: 8px 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+article {
+  grid-column: 1;
+  text-align: center;
+  padding-bottom: 320px;
+}
+
+.headline > h2:nth-child(2) {
+  color: #999;
+  font-size: 16px;
+}
+
+article img {
+  width: 50%;
+  height: auto;
+}
+
+aside {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  padding-bottom: 320px;
+}
+
+aside ul {
+  margin-top: 48px;
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+aside ul li {
+  width: 192px;
+  display: flex;
+  gap: 8px;
+}
+
+aside ul li:first-child {
+  width: 60%;
+}
+
+.fa-solid {
+  font-size: 32px;
+  color: #228be6;
+}
+
+.or {
+  border-bottom: 1px solid #ced4da;
+  color: #ced4da;
+  width: 80%;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.or span {
+  font-size: 16px;
+  padding: 0 16px;
+  background-color: #fff;
+  position: relative;
+  top: 10px;
+}
+
+aside {
+  font-size: 14px;
+}
+
+aside form {
+  width: 90%;
+  margin-bottom: 16px;
+}
+
+aside form div {
+  margin-bottom: 8px;
+}
+
+aside form input {
+  padding: 8px 16px;
+  border: none;
+  border: 1px solid #ced4da;
+  width: 100%;
+  color: #999;
+}
+
+aside form p {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+aside form p a {
+  text-decoration: none;
+  color: #228be6;
+}
+
+aside form button {
+  background-color: #228be6;
+  border: none;
+  padding: 20px 80px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+footer {
+  grid-column: 1 / span 2;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-logo {
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+.footer-list1 {
+  gap: 16px;
+  margin-right: 64px;
+}
+
+.footer-list2 {
+  gap: 24px;
+  margin-right: auto;
+}
+
+.footer-list2 > li > a {
+  text-decoration: none;
+  color: #999;
+}
